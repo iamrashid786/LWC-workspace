@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="wire SSC Params to search contact by FirstName" icon-name="custom:custom43">
+        <lightning-input type="search" label="Enter the Search Text" onchange={handleSearch} value={searchKey}> 
+            </lightning-input>
+
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.id}>{contact.Name}================>{contact.Email}=========>{contact.Phone}</p>
+                </template>
+            </template>
+
+            <template if:true={contacts.error}>
+                errors={contacts.error};
+            </template>
+    </lightning-card>
+    
+</template>

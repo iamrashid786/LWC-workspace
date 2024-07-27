@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Create Customer">
+        <p class="slds-p-horizontal_small">
+            <lightning-record-form object-api-name={objectName}
+            fields={fields} onsuccess={handleCustomerCreate}></lightning-record-form>
+            
+        </p>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Lightning Record Form">
+        <lightning-layout>
+            <ligtning-layout-item size="4">
+                <lightning-record-form
+                record-id=recordId
+                object-api-name="Account"
+                layout-type = "Full"
+                mode="view"
+                >
+            </lightning-record-form>
+            </ligtning-layout-item>
+            <ligtning-layout-item size="4">
+                <lightning-record-form
+                record-id=recordId
+                object-api-name="Account"
+                layout-type = "Full"
+                mode="edit"
+                >
+            </lightning-record-form>
+            </ligtning-layout-item>
+            <ligtning-layout-item size="4">
+                <lightning-record-form
+                record-id=recordId
+                object-api-name="Account"
+                layout-type = "Full"
+                mode="readonly"
+                >
+            </lightning-record-form>
+            </ligtning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

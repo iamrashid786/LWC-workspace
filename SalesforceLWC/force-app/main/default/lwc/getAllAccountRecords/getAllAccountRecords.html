@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title = "Account Records">
+        <template if:true={accounts}>
+            <template for:each={displayedAccounts} for:item="account">
+                <p key = {account.Id}>{account.Name}</p>
+            </template>
+            <lightning-button-group>
+                <lightning-button label="Previous" onclick={handlePrevious}></lightning-button>
+                <lightning-button label="Next" onclick={handleNext}></lightning-button>
+            </lightning-button-group>
+        </template>
+        <template if:false={accounts}> OOpppssss..!!!! No Account Found</template>
+    </lightning-card>
+    
+</template>
